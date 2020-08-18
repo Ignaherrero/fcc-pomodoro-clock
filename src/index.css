@@ -1,19 +1,80 @@
 :root {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background-color: #660033;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-* {
-  text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: white;
+  text-align: center;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.title {
+  font-size: 2rem;
+}
+
+.break-label {
+  font-size: 1.5rem;
+}
+
+.break-length,
+.session-length,
+.timer-label,
+.timer-left {
+  font-size: 1.5rem;
+}
+
+.session-increment,
+.session-decrement,
+.break-increment,
+.break-decrement,
+.start-stop,
+.reset {
+  height: 50px;
+  width: 50px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
   background-color: #660033;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.session-increment,
+.session-decrement,
+.break-increment,
+.break-decrement {
+  font-size: 2rem;
+}
+
+.start-stop,
+.reset {
+  font-size: 2rem;
+  height: 43px;
+  width: 100px;
+}
+
+.break,
+.session {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 190px;
+  font-size: 2rem;
+}
+
+.group-button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
 }

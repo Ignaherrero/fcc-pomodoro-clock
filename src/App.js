@@ -2,10 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Controller from './Components/Controller';
 // FIXME refactorizar componentes
-const H1 = styled.h1`
-font-weight:300;
-font-size:2rem;
-`
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -117,12 +114,10 @@ class App extends React.Component {
     sound.currentTime = 0
   }
   render() {
-    console.log(this.timerId)
-
     return (
       <div>
-        <H1>Pomodoro Clock</H1>
-        <H1 id="break-label">Break Label</H1>
+        <h1 className="title">Pomodoro Clock</h1>
+        <p id="break-label" className="break-label">Break Label</p>
         <Controller
           handleOptions={this.handleOptions}
           state={this.state}
