@@ -1,7 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
 import Controller from './Components/Controller';
-// FIXME refactorizar componentes
 
 class App extends React.Component {
   constructor(props) {
